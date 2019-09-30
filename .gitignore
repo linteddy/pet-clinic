@@ -153,3 +153,5 @@ pet-clinic-web/target/maven-archiver/
 pet-clinic-web/target/maven-status/
 pet-clinic-web/target/pet-clinic-web-0.0.2.jar.original
 pet-clinic-web/target/surefire-reports/
+pet-clinic-web/target/
+
