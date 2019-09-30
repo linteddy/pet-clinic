@@ -1,15 +1,17 @@
 package org.unndevs.petclinic.model;
 
+
 import java.io.Serializable;
 
 public class BaseEntity implements Serializable {
-  private Long id;
 
-  private Long getId() {
-    return id;
-  }
+    private Long id;
 
-  private void setId(final Long id) {
-    this.id = id;
-  }
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }

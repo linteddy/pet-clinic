@@ -8,8 +8,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 @SpringBootApplication
 @Slf4j
 public class PetClinicApplication {
-
-  public static void main(String[] args) {
-    final ConfigurableApplicationContext applicationContext = SpringApplication.run(PetClinicApplication.class, args);
-  }
+    public static void main(String[] args) {
+        final ConfigurableApplicationContext applicationContext = SpringApplication.run(PetClinicApplication.class, args);
+    }
 }

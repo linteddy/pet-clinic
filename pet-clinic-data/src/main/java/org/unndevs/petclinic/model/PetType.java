@@ -3,6 +3,6 @@ package org.unndevs.petclinic.model;
 import lombok.Data;
 
 @Data
-public class PetType extends BaseEntity{
-  private String name;
+public class PetType extends BaseEntity {
+    private String name;
 }
