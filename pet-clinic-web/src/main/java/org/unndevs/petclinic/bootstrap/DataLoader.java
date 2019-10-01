@@ -1,24 +1,24 @@
 package org.unndevs.petclinic.bootstrap;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import org.unndevs.petclinic.model.Owner;
 import org.unndevs.petclinic.model.Vet;
 import org.unndevs.petclinic.services.OwnerService;
 import org.unndevs.petclinic.services.VetService;
-import org.unndevs.petclinic.services.map.OwnerServiceMap;
-import org.unndevs.petclinic.services.map.VetServiceMap;
 
 
 @Component
+@Slf4j
 public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(final OwnerService ownerService, final VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
@@ -38,7 +38,7 @@ public class DataLoader implements CommandLineRunner {
 
         ownerService.save(owner2);
 
-        System.out.println("Loaded Owners....");
+        log.info("Loaded Owners....");
 
         Vet vet1 = new Vet();
         vet1.setId(1L);
@@ -54,6 +54,6 @@ public class DataLoader implements CommandLineRunner {
 
         vetService.save(vet1);
 
-        System.out.println("Loaded Vets....");
+        log.info("Loaded Vets....");
     }
 }
