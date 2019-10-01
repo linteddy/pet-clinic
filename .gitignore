@@ -139,13 +139,9 @@ Desktop.ini
 # ESLint
 ######################
 .eslintcache
-pet-clinic-data/src/main/resources/
-pet-clinic-data/src/test/
 pet-clinic-data/target/generated-sources/
 pet-clinic-data/target/maven-archiver/
 pet-clinic-data/target/maven-status/
-pet-clinic-web/src/main/resources/static/
-pet-clinic-web/src/main/resources/templates/
 pet-clinic-web/target/classes/application.properties
 pet-clinic-web/target/generated-sources/
 pet-clinic-web/target/generated-test-sources/
